@@ -44,7 +44,12 @@
                 menu.classList.toggle('active');
             });
 
-
+            document.querySelectorAll('.project-note').forEach(note => {
+                const angles = [-2, -1, 0, 1, 2];
+                const angle = angles[Math.floor(Math.random() * angles.length)];
+                note.style.setProperty('--rotation', `${angle}deg`);
+              });
+              
 
 
 
